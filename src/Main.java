@@ -10,6 +10,7 @@ public class Main{
 
         if(!answer.equals("yes")){
             Methods.exitProgram();
+            Methods.print("Incorrect");
         }
         else{
             Methods.print("Question 1\n We are using only 10% of our brain\n Type 'true' or 'false'");
@@ -18,6 +19,7 @@ public class Main{
 
             if(!answer2.equals("false")){
                 Methods.exitProgram();
+                Methods.print("Incorrect");
             }
             else{
                 Methods.print("Question 2\n Reading in a lite darkness is not affecting your eyesight\n Type 'true' or 'false'");
@@ -26,6 +28,7 @@ public class Main{
 
                 if(!answer3.equals("true")){
                     Methods.exitProgram();
+                    Methods.print("Incorrect");
                 }
                 else{
                     Methods.print("Question 3\n Is Emilbek agay crush?\n Type 'true' or 'false'");
