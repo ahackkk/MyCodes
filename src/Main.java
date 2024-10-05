@@ -9,7 +9,7 @@ public class Main{
 
         while(!answer.equals("yes")){
             Methods.print("Get ready");
-            String tryanswer = system.nextLine();
+            answer = system.nextLine();
         }
 
         Methods.print("Question 1\n We are using only 10% of our brain\n Type 'true' or 'false'");
