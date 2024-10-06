@@ -5,6 +5,6 @@ public class Methods {
 
     public static void exitProgram(){
         System.exit(1);
-        System.out.println("Invalid syntaxes");
+        System.out.println("Invalid syntax");
     }
 }
