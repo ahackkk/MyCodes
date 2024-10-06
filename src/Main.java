@@ -16,7 +16,7 @@ public class Main{
         String answer2 = system.nextLine();
         int score = 0;
 
-        if(answer2.equals("yes")){
+        if(answer2.equals("false")){
             score++;
         }
 
@@ -32,12 +32,13 @@ public class Main{
         String answer5 = system.nextLine();
 
                     if(answer5.equals("true")){
+                        score++;
                         Methods.print("gay");
                     }
                     else{
                         Methods.print("shakal");
                     }
 
-        Methods.print(String.valueOf("Your score is " + score));
+        Methods.print("Your score is " + score);
     }
 }
