@@ -12,30 +12,29 @@ public class Main{
             answer = system.nextLine();
         }
 
+        int score = 0;
+
         Methods.print("Question 1\n We are using only 10% of our brain\n Type 'true' or 'false'");
         String answer2 = system.nextLine();
-        int score = 0;
 
         if(answer2.equals("false")){
             score++;
         }
 
-        Methods.print("Question 2\n Reading in a lite darkness is not affecting your eyesight\n Type 'true' or 'false'");
-        String answer4 = system.nextLine();
+        Methods.print("Question 2\n 550 / 2 = 225\n Type 'true' or 'false'");
+        String answer3 = system.nextLine();
 
-        if(!answer4.equals("true")){
+        if(answer3.equals("false")){
             score++;
-
         }
 
         Methods.print("Question 3\n Is Emilbek agay crush?\n Type 'true' or 'false'");
-        String answer5 = system.nextLine();
+        String answer4 = system.nextLine();
 
-                    if(answer5.equals("true")){
+                    if(answer4.equals("true")){
                         score++;
                         Methods.print("gay");
-                    }
-                    else{
+                    } else{
                         Methods.print("shakal");
                     }
 
