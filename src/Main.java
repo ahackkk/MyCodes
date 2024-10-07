@@ -1,7 +1,10 @@
 import java.util.Scanner;
+import java.util.Timer;
 
 public class Main{
     public static void main(String[] args) {
+
+        long startTime = System.currentTimeMillis();
 
         Scanner system = new Scanner(System.in);
         Methods.print("If you are ready to play, type 'yes'");
@@ -86,6 +89,8 @@ public class Main{
             Methods.print("Incorrect\n Венера действительно самая горячая планета, несмотря на то, что Меркурий ближе к Солнцу.");
         }
 
-        Methods.print("Your score is " + score);
+        long endTime = System.currentTimeMillis();
+        long totalTime = (endTime - startTime) / 1000; // время в секундах
+        Methods.print("Your score is " + score + " and you took " + totalTime + " seconds.");
     }
 }
