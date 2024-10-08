@@ -16,6 +16,7 @@ public class Main{
         }
 
         int score = 0;
+        int lives = 3;
 
         Methods.print("\nQuestion 1\n We can use 100% of our brain at one time\n Type 'true' or 'false'");
         String answer2 = system.nextLine();
@@ -26,6 +27,7 @@ public class Main{
         }
         else {
             Methods.print("Incorrect\n It's myth, some parts are used for different purposes");
+            lives--;
         }
 
         Methods.print("\nQuestion 2\n 550 / 2 = 225\n Type 'true' or 'false'");
@@ -37,6 +39,7 @@ public class Main{
         }
         else {
                 Methods.print("Incorrect\n Bro, really?");
+            lives--;
         }
 
         Methods.print("\nQuestion 3\n Bananas grow on trees.\n Type 'true' or 'false'");
@@ -47,7 +50,10 @@ public class Main{
             score++;
         } else{
             Methods.print("Incorrect\n Бананы растут не на деревьях, а на травянистых растениях, которые ошибочно принимают за деревья.");
+            lives--;
         }
+
+        Methods.checkLives(lives, score);
 
         Methods.print("\nQuestion 4\n The Great Wall of China is visible from space.\n Type 'true' or 'false'");
         String answer5 = system.nextLine();
@@ -57,7 +63,10 @@ public class Main{
             score++;
         } else{
             Methods.print("Incorrect\n Это миф. Великая китайская стена не видна из космоса невооруженным глазом.");
+            lives--;
         }
+
+        Methods.checkLives(lives, score);
 
         Methods.print("\nQuestion 5\n Goldfish have a memory span of only three seconds.\n Type 'true' or 'false'");
         String answer6 = system.nextLine();
@@ -67,7 +76,10 @@ public class Main{
             score++;
         } else{
             Methods.print("Incorrect\n Это миф. У золотых рыбок память может длиться несколько месяцев.");
+            lives--;
         }
+
+        Methods.checkLives(lives, score);
 
         Methods.print("\nQuestion 6\n The human body contains more bacterial cells than human cells.\n Type 'true' or 'false'");
         String answer7 = system.nextLine();
@@ -77,7 +89,10 @@ public class Main{
             score++;
         } else{
             Methods.print("Incorrect\n В теле человека действительно больше бактериальных клеток, чем человеческих, но они маленькие и составляют малую часть массы.");
+            lives--;
         }
+
+        Methods.checkLives(lives, score);
 
         Methods.print("\nQuestion 7\n Venus is the hottest planet in the Solar System\n Type 'true' or 'false'");
         String answer8 = system.nextLine();
@@ -87,7 +102,10 @@ public class Main{
             score++;
         } else{
             Methods.print("Incorrect\n Венера действительно самая горячая планета, несмотря на то, что Меркурий ближе к Солнцу.");
+            lives--;
         }
+
+        Methods.checkLives(lives, score);
 
         long endTime = System.currentTimeMillis();
         long totalTime = (endTime - startTime) / 1000; // время в секундах
