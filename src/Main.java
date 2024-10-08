@@ -7,7 +7,7 @@ public class Main{
         long startTime = System.currentTimeMillis();
 
         Scanner system = new Scanner(System.in);
-        Methods.print("If you are ready to play, type 'yes'");
+        Methods.print("If you are ready to play, type 'yes'.\nYou have 3 lives.");
         String answer = system.nextLine();
 
         while(!answer.equals("yes")){
@@ -107,8 +107,47 @@ public class Main{
 
         Methods.checkLives(lives, score);
 
+        Methods.print("\nQuestion 8\n Hairs of the human continue to grow even after death\n Type 'true' or 'false'");
+        String answer9 = system.nextLine();
+
+        if(answer9.equals("false")){
+            Methods.print("Correct");
+            score++;
+        } else{
+            Methods.print("Incorrect\n Это миф; волосы и ногти не растут после смерти.");
+            lives--;
+        }
+
+        Methods.checkLives(lives, score);
+
+        Methods.print("\nQuestion 9\n People have never seen dinosaurs\n Type 'true' or 'false'");
+        String answer10 = system.nextLine();
+
+        if(answer10.equals("true")){
+            Methods.print("Correct");
+            score++;
+        } else{
+            Methods.print("Incorrect\n Первые динозавры появились около 230 миллионов лет назад, а первые люди - лишь 200 тысяч лет назад");
+            lives--;
+        }
+
+        Methods.checkLives(lives, score);
+
+        Methods.print("\nQuestion 10\n Finland have land borders with Denmark\n Type 'true' or 'false'");
+        String answer11 = system.nextLine();
+
+        if(answer11.equals("false")){
+            Methods.print("Correct");
+            score++;
+        } else{
+            Methods.print("Incorrect\n Между Финляндией и Данией находится вода, а именно Балтийское море и пролив Эресунн");
+            lives--;
+        }
+
+        Methods.checkLives(lives, score);
+
         long endTime = System.currentTimeMillis();
         long totalTime = (endTime - startTime) / 1000; // время в секундах
-        Methods.print("Your score is " + score + " and you took " + totalTime + " seconds.");
+        Methods.print("Your score is " + score + " and you took " + totalTime + " seconds " + "with " + lives + " leftno");
     }
 }
