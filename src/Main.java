@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Timer;
 
 public class Main{
     public static void main(String[] args) {
@@ -7,7 +6,7 @@ public class Main{
         long startTime = System.currentTimeMillis();
 
         Scanner system = new Scanner(System.in);
-        Methods.print("If you are ready to play, type 'yes'.\nYou have 3 lives.");
+        Methods.print("If you are ready to play, type 'yes'.");
         String answer = system.nextLine();
 
         while(!answer.equals("yes")){
