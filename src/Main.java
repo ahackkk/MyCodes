@@ -39,6 +39,8 @@ public class Main {
             }
         }
 
+
+
         long endTime = System.currentTimeMillis();
         long totalTime = (endTime - startTime) / 1000; // время в секундах
         Methods.print("Your score is " + score + " and you took " + totalTime + " seconds with " + lives + " lives left.");
